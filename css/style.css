@@ -12,7 +12,9 @@ ul {
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
 }
 
 * {
@@ -26,9 +28,12 @@ a {
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
-
-
+@media screen and (max-width:32px) {
+	.main{
+		background-image: none;
+	}
 }
 
 .menu {
@@ -38,16 +43,29 @@ a {
 }
 
 .menu a {
-  color: #4a5057;
+  color: #000000;
   font-size: 25px;
   margin: 0px 20px;
   font-family: myriad pro regular;
-  font-weight: 600;
+	font-weight: 600;
+}
+@media screen and (max-width:414px) {
+	.menu a{
+		font-size: 18px;
+		margin-top: 5px;
+	}
 }
 
 .menu img {
   height: 25px;
   margin-top: 5px;
+}
+
+@media screen and (max-width:414px) {
+	.menu img{
+		height: 18px;
+		margin-top: 10px;
+	}
 }
 
 nav {
@@ -95,7 +113,6 @@ a {
   text-align: center;
   margin: 0px;
   padding: 0px;
-
 
   color: #3d3d3e;
 }
